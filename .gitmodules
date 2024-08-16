@@ -1,0 +1,3 @@
+[submodule "WebTech"]
+	path = WebTech
+	url = https://github.com/hacke-roid/WebTech.git
