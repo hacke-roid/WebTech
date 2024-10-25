@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./AreaPerimeter.css">
+</head>
+<body>
+    
+    <h1>Calculate Areas and Perimeters of Shapes</h1>
+    <div class="btn-container">
+    <!-- <button onclick="demo()" type="button">Calculate Shapes</button> -->
+</div>
+
+    <br>
+    
+        <h2>Input values</h2>
+        <div class="container2">
+            <label for="base">Base: </label>
+            <input type="number" id="base" name="base" min="1" >
+            
+            <label for="height">Height: </label>
+            <input type="number" id="height" name="height" min="1" >
+
+            <label for="side">1st Side: </label>
+            <input type="number" id="side" name="side" min="1" >
+
+            <label for="side2">2nd Side: </label>
+            <input type="number" id="side2" name="side2" min="1" >
+
+            <label for="side3">3rd Side: </label>
+            <input type="number" id="side3" name="side3" min="1" >
+
+            <label for="side4">4th Side: </label>
+            <input type="number" id="side4" name="side4" min="1" >
+
+            <label for="radius">Radius: </label>
+            <input type="number" id="radius" name="radius" min="1" >
+
+            <label for="length">Length: </label>
+            <input type="number" id="length" name="length" min="1" >
+
+            <label for="width">Width: </label>
+            <input type="number" id="width" name="width" min="1" >
+
+            <label for="base2">Base2:  </label>
+            <input type="number" id="base2" name="base2" min="1" >
+
+            <button onclick="demo()">Submit</button>
+
+        </div>
+    
+    <div class="container">
+    <table border="1" bordercolor="black" cellpadding="20px" cellspacing="1px" align="center">
+        <thead>
+            <tr>
+                <th>Shape</th>
+                <th >Area</th>
+                <th>Perimeter</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr></tr>
+                <td>Triangle</td>
+                <td id="triangle-area">A=(1 / 2)x Base x Height</td>
+                <td id="triangle-perimeter"></td>
+            </tr>
+            <tr>
+                <td>Circle</td>
+                <td id="area-circle"></td>
+                <td id="perimeter-circle"></td>
+            </tr>
+            <tr>
+                <td>Square</td>
+                <td id="area-square"></td>
+                <td id="perimeter-square"></td>
+            </tr>
+            <tr>
+                <td>Rectangle</td>
+                <td id="area-rectangle"></td>
+                <td id="perimeter-rectangle"></td>
+            </tr>
+            <tr>
+                <td>Parallelogram</td>
+                <td id="parallelogram-area"></td>
+                <td id="parallelogram-perimeter"></td>
+            </tr>
+            <tr>
+                <td>Rhombus</td>
+                <td id="rhombus-area"></td>
+                <td id="rhombus-perimeter"></td>
+            </tr>
+            <tr>
+                <td>Trapezoid</td>
+                <td id="tropezoid-area"></td>
+                <td id="tropezoid-perimeter"></td>
+            </tr>
+            <tr>
+                <td>Pentagon</td>
+                <td id="pentagon-area"></td>
+                <td id="pentagon-perimeter"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    <script src="./AreaPerimeter.js"></script>
+</body>
+</html>

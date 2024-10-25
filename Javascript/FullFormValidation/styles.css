@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background-color: rgb(97, 94, 94); */
+    /* background-color: lightblue; */
+    background: linear-gradient(-135deg, #c850c0, #4158d0)
+}
+
+.container{
+    width: 50%;
+    height: 80vh;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    /* background-color: #ffbcbc; */
+
+}
+
+span{
+    font-family: Poppins-Bold;
+    font-size: 24px;
+  color: #333333;
+  /* line-height: 1.2; */
+  text-align: center;
+  width: 100%;
+  /* display: block; */
+  padding-bottom: 54px;
+}
+
+form {
+    width: 70%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.form-container {
+    margin: 20px;
+}
+
+.form-container>label{
+    font-size: medium;
+    /* gap: 10px; */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+button[type="submit"]:hover {
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+}
+
+
+button[type="reset"] {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+button[type="reset"]:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: small;
+}
+
+label{
+    font-family: Poppins-Medium;
+}
+
+input.warning {
+    border: 2px solid red;
+}
+input.success {
+    border: 2px solid green;
+}
+
+aside{
+    color: red;
+    font-size: x-small;
+    padding: 0;
+    margin: 0;
+}

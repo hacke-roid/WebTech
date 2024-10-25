@@ -1,0 +1,21 @@
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+}
+
+.box:hover{
+    background-color: blue;
+    transform: scalex(1.2);
+    
+    
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

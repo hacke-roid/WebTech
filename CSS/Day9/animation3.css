@@ -1,0 +1,61 @@
+.box1{
+    height: 500px;
+    width: 500px;
+    border: 2px solid red;
+    animation-name: box1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes box1{
+    from{}
+
+    to{
+        height: 500px;
+        width: 500px;
+    }
+}
+
+.box2{
+    border: 2px solid red;
+    animation-name: box2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes box2{
+    from{}
+
+    to{
+        height: 400px;
+        width: 400px;
+    }
+}
+
+.box3{
+    border: 2px solid red;
+    animation-name: box3;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes box3 {
+    from{}
+
+    to{
+        height: 300px;
+        width: 300px;
+    }
+}

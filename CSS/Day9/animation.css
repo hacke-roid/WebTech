@@ -1,0 +1,33 @@
+.box {
+  height: 400px;
+  width: 400px;
+  border: 2px solid red;
+  animation-name: change-bg-color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  transition-duration: 2s;
+}
+
+@keyframes change-bg-color {
+    from{
+        background-color: aqua;
+    }
+    to{
+        background-color: red;
+    }
+
+    
+}
+
+.box:hover{
+    transition-duration: 2s;
+    border-radius: 50%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}

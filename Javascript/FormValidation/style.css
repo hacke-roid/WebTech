@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+section{
+    border: 1px solid gray;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    
+}
+
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+article{
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+}
+
+form{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+input{
+    height: 40px;
+    width: 250px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    /* border: none; */
+
+}
+
+button{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    width: 250px;
+}
+
+.warning {
+    border: 2px solid red;
+    /* border: none; */
+}
+
+.success{
+    border: 2px solid green;
+}
+
+#submit_btn {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+#submit_btn:hover{
+    background-color: white;
+    border: 2px solid green;
+    color: green;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+#cancel_btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+#cancel_btn:hover{
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+#show_pwd{
+    background-color: blue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+
+#show_pwd:hover{
+    background-color: white;
+    border: 2px solid blue;
+    color: blue;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+#error1{
+    font-size: 10px;
+    align-items: center;
+}
+
+#error2{
+    font-size: 10px;
+    align-items: center;
+}

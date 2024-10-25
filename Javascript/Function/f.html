@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send JSON Data to Server</title>
+  </head>
+  <body>
+    <h2>Submit User Data</h2>
+    <form id="userForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Search for a User</h2>
+
+    <input type="text" id="searchInput" placeholder="Enter username" />
+    <button id="searchBtn">Search</button>
+
+    <pre id="output"></pre>
+
+    <script>
+      // Capture form submission
+      document
+        .getElementById("userForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent default form submission
+
+          // Get user input
+          const db = {
+            username: document.getElementById("username").value,
+            password: document.getElementById("password").value,
+          };
+
+          // Send data to server
+          fetch("http://localhost:3000/save-data", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(db), // Send data as JSON
+          })
+            .then((response) => response.json())
+            .then((result) => {
+              console.log("Success:", result); // Handle success
+            })
+            .catch((error) => {
+              console.error("Error:", error); // Handle error
+            });
+        });
+
+        fetch('http://localhost:3000/get-data', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Fetched data:', data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+        
+        
+    </script>
+  </body>
+</html>

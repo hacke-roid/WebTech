@@ -1,0 +1,28 @@
+ .box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    background-color: rgb(141, 230, 105);
+    transition-duration: 2s;
+    
+}
+
+.box:hover{
+    background-color: blue;
+    transform: scale(1.2);  
+    transition-duration: 2s ;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient(red 0 10px, blue 10px 20px);
+    background-image: repeating-radial-gradient(red 0 10px, blue 10px 20px);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box>i{
+    font-size: 100px;
+}

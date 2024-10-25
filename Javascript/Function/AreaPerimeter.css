@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 900px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    height: 100%;
+    width: 100%;
+    font-size: 20px !important;
+}
+
+
+.btn-container{
+    height: 20px;
+    width: 120px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+.input-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.input-section input {
+    padding: 8px;
+    margin: 8px;
+    width: 150px;
+}
+.input-section button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.input-section button:hover {
+    background-color: #45a049;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    /* width: 200px; */
+    border: 2px solid black;
+    align-items: center;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="sign_up">
+        <span>Sign In</span>
+        <div class="form-container"></div>
+        <label>First Name</label>
+        <div>
+          <input type="text" required placeholder="Enter the name" id="first-name" />
+            <aside id="error1"></aside>
+          
+        </div>
+        <label>Last Name</label>
+        <div>
+          <input type="text" required placeholder="Enter the name" id="last-name" />
+        </div>
+        <label>Email</label>
+        <div>
+          <input type="email" required placeholder="Enter the Email" id="email-id" />
+        </div>
+        <label>Password</label>
+        <div>
+          <input type="password" placeholder="Enter the password" required  id="password"/>
+            <aside id="error2"></aside>
+        </div>
+
+        <label>Phone No.</label>
+        <div>
+          <input type="tel" placeholder="Enter the phone number" required id="phone-no"/>
+            <aside id="error3"></aside>
+        </div>
+        <div class="submit-btn">
+          <button type="submit" id="submit-btn">Sign in</button>
+        </div>
+        <div class="cancel-btn">
+          <button type="reset">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
