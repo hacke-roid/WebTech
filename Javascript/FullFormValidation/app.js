@@ -99,5 +99,7 @@ sign_up_btn.addEventListener("submit", (e) => {
       password_value,
       number_value
     );
+
+    window.open("./Login.html");
   }
 });
